@@ -1,0 +1,60 @@
+@media screen and (max-width:1250px){
+    nav{
+       display: block;
+       padding: 0;
+    }
+    nav .icon{
+       display: inline-block;
+       padding: 15px 30px;
+   }
+   nav .search_box{
+       width: 100%;
+       display: inline-flex;
+       justify-content: center;
+       margin-bottom: 15xp;
+   }
+   nav .search_box input{
+    width: 90%;  
+   
+   }
+   nav ol{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
+   }
+   nav ol li{
+    text-align: center;
+   }
+   nav ol li a{
+    color: #000;
+    font-size: 28px;
+    padding: 25px;
+    display: block;
+    
+   }
+   nav .bar{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    cursor: pointer;
+   }
+   nav .bar #times{
+    display: none;
+   }
+   #check:checked ~ nav .bar #times{
+    display: block;
+   }
+   #check:checked ~ nav .bar #bars{
+    display: none;
+   }
+   #check:checked ~ nav ol{
+    visibility: visible;
+    height: 465px;
+   }
+}
+
+
